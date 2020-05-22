@@ -1,0 +1,484 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    background-color: #f3f5f7;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix')
+            format(
+                'embedded-opentype'
+            ),
+        url('../fonts/icomoon.ttf?tomleg')
+            format(
+                'truetype'
+            ),
+        url('../fonts/icomoon.woff?tomleg')
+            format(
+                'woff'
+            ),
+        url('../fonts/icomoon.svg?tomleg#icomoon')
+            format(
+                'svg'
+            );
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 首部 */
+.header {
+    height: 100px;
+    margin-top: 30px;
+}
+/* 雪梨在线 */
+.logo {
+    float: left;
+    width: 178px;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+}
+.logo span {
+    font-size: 40px;
+    font-weight: 600;
+    color: #00a4ff;
+}
+/* 导航 */
+.nav {
+    float: left;
+    margin-left: 72px;
+    height: 42px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 14px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 8px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom: 2px
+        solid
+        #00a4ff;
+}
+/* 搜索框 */
+.search {
+    float: left;
+    height: 42px;
+    width: 411px;
+    margin-left: 155px;
+}
+.search input {
+    float: left;
+    width: 361px;
+    height: 42px;
+    border: 1px
+        solid
+        #00a4ff;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 18px;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background: url(../image/btn.png);
+}
+.user {
+    float: left;
+    line-height: 42px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #898a8a;
+}
+
+/* banner */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: #14024b;
+}
+.subnav ul li {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav
+    ul
+    li
+    .first {
+    margin-top: 8px;
+    color: #00a4ff;
+}
+
+.subnav ul li a {
+    height: 45px;
+    width: 190px;
+    font-size: 14px;
+    color: #fff;
+}
+.subnav ul li img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.subnav
+    ul
+    li
+    a:hover {
+    color: #00a4ff;
+}
+.focus {
+    height: 421px;
+    background: url(../image/banner2.png)
+        no-repeat
+        top center;
+}
+/* 精品推荐 */
+.goods {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    box-shadow: 0
+        2px 2px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+    line-height: 60px;
+}
+.goods h3 {
+    float: left;
+    margin-left: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods ul {
+    float: left;
+    margin-left: 34px;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px
+        solid #ccc;
+}
+.mod {
+    float: right;
+    margin-right: 60px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+/* box主体模块 */
+.box {
+    margin-top: 37px;
+}
+.box-hd {
+    height: 40px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 8px;
+    margin-right: 24px;
+}
+.box-bd .clearfix,
+.front-bd
+    .clearfix {
+    width: 1220px;
+    overflow: hidden;
+}
+.box-bd ul li,
+.front-bd ul li {
+    float: left;
+    width: 228px;
+    height: 272px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.box-bd
+    ul
+    li:first-child {
+    box-shadow: 0
+        2px 2px 2px
+        rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+}
+.box-bd ul li img,
+.front-bd
+    ul
+    li
+    img {
+    width: 100%;
+}
+.box-bd ul li h4,
+.front-bd ul li h4 {
+    margin: 24px
+        18px 0 24px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #050505;
+}
+.box-bd .info,
+.front-bd .info {
+    margin-top: 19px;
+    margin-left: 24px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd .info span,
+.front-bd
+    .info
+    span {
+    color: #ff7c2d;
+}
+/* 前端开发课程模块 */
+.front {
+    margin-top: 21px;
+}
+.front-hd {
+    height: 40px;
+}
+
+.front .items {
+    font-size: 16px;
+    color: #868686;
+    margin-left: 430px;
+    line-height: 26px;
+}
+.front .items a {
+    float: left;
+    margin-right: 70px;
+}
+.front
+    .items
+    a:first-child {
+    color: #00a4ff;
+}
+
+.front-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+.front-hd > a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 8px;
+    margin-right: 24px;
+}
+/* 牛人推荐 */
+
+.teacher {
+    margin-top: 21px;
+    margin-bottom: 72px;
+}
+.teacher-hd {
+    height: 52px;
+}
+.teacher-hd h3 {
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+.teacher-bd ul {
+    overflow: hidden;
+}
+
+.teacher-bd ul li {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    width: 228px;
+    height: 320px;
+}
+.teacher-bd ul .ad {
+    width: 471px;
+    height: 320px;
+    margin-left: 0;
+}
+.teacher-bd
+    ul
+    .ad
+    .advertise {
+    position: absolute;
+    top: 98px;
+    left: 13px;
+}
+.teacher-bd
+    ul
+    .ad
+    .advertise
+    p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f9e103;
+}
+.advertise p span {
+    font-size: 27.2px;
+    font-weight: 400;
+    color: #fff;
+}
+.advertise .click {
+    margin: 13px 0 0
+        3px;
+    width: 87px;
+    height: 25px;
+    border: 1px
+        solid
+        #f9e103;
+    font-size: 13.24px;
+    line-height: 23px;
+    color: #f9e103;
+    text-align: center;
+}
+.teacher-bd
+    ul
+    li
+    .introduce {
+    position: absolute;
+    bottom: 0;
+    height: 122px;
+    width: 228px;
+    padding: 21px
+        28px 0 25px;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.4
+    );
+}
+.introduce h3 {
+    font-size: 18px;
+    color: #fff;
+}
+.introduce h3 span {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 12px;
+}
+.introduce p {
+    margin-top: 13px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* footer */
+.footer {
+    height: 420px;
+    background-color: #fff;
+}
+.footer .w {
+    padding-top: 160px;
+}
+.copyright {
+    float: left;
+}
+.copyright span {
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #00a4ff;
+}
+.copyright p {
+    font-size: 12px;
+    color: #666;
+    margin: 35px 0
+        32px 20px;
+}
+.copyright .app {
+    display: block;
+    border: 1px
+        solid
+        #00a4ff;
+    width: 120px;
+    height: 36px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 32px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+}
+.links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin: 7px 0
+        5px 0;
+}
+.links .cowork {
+    margin-right: 29px;
+}
+.links .service {
+    margin-right: 121px;
+}
+.links .about {
+    margin-right: 146px;
+}
+.links dl dd {
+    height: 12px;
+    margin-top: 9px;
+}
+.links dl dd a {
+    color: #333;
+    font-size: 12px;
+}
